@@ -32,20 +32,10 @@ page "/index.html", :layout => false
 # Helpers
 ###
 
-activate :thumbnailer, 
-  :dimensions => {
-    :small => '200x',
-  },
-  :include_data_thumbnails => true,
-  :namespace_directory => %w(thumbs)
+activate :middleman_simple_thumbnailer
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
 
 # Methods defined in the helpers block are available in templates
 # helpers do

@@ -5,7 +5,7 @@ gem "middleman", "~> 3.3.12"
 # For shrinking things
 gem "middleman-minify-html"
 gem "middleman-imageoptim"
-gem "middleman-thumbnailer", :git => "https://github.com/nhemsley/middleman-thumbnailer.git"
+gem "middleman-simple-thumbnailer"
 
 # Faster json
 gem "oj"
