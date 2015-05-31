@@ -32,6 +32,13 @@ page "/index.html", :layout => false
 # Helpers
 ###
 
+activate :thumbnailer, 
+  :dimensions => {
+    :small => '200x',
+  },
+  :include_data_thumbnails => true,
+  :namespace_directory => %w(thumbs)
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
