@@ -80,6 +80,7 @@ when 'hostgator'
     deploy.method   = :rsync
     deploy.host     = 'welchfamilyweb.com'
     deploy.path     = '/home4/dlnwelch/public_html/traviscwelch.com'
+    deploy.build_before = true
   end
 else
   activate :deploy do |deploy|
