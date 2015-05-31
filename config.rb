@@ -62,7 +62,10 @@ configure :build do
   activate :asset_hash
 
   # https://github.com/plasticine/middleman-imageoptim
-  activate :imageoptim
+  activate :imageoptim do |options|
+    options.pngout = false
+    options.svgo = false
+  end
 
   # https://middlemanapp.com/advanced/file_size_optimization/
   activate :minify_html
