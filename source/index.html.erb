@@ -6,17 +6,20 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-    <title>Travis Welch</title>
+    <title>Travis C. Welch</title>
 
     <%= stylesheet_link_tag "tachyons", "all" %>
     <%= javascript_include_tag "imagesloaded.pkgd", "packery.pkgd", "all" %>
   </head>
 
   <body class="mw7 center">
-    <div class="pam w-100">
-      <h1 class="lh-title">Travis C. Welch</h1>
+    <div class="pvm w-100">
+      <h1 class="lh-title man f2 ttu book">Travis C. Welch</h1>
     </div>
     <div id="container">
+      <div class="item ba" style="width: 400px;">
+        <p class="lh-title pam f4 book">&quot;Success is stumbling from failure to failure with no loss of enthusiasm&quot; &ndash; Winston Churchill</p>
+      </div>
       <% sitemap.resources.select {|r| r.path.include? "img/travis/" }.each do |r| %>
         <div class="item">
           <% link_to r.path do %>
