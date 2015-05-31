@@ -77,10 +77,11 @@ end
 case ENV['TARGET'].to_s.downcase
 when 'hostgator'
   activate :deploy do |deploy|
-    deploy.method   = :rsync
-    deploy.host     = 'welchfamilyweb.com'
-    deploy.path     = '/home4/dlnwelch/public_html/traviscwelch.com'
+    deploy.method = :rsync
+    deploy.host = 'welchfamilyweb.com'
+    deploy.path = '/home4/dlnwelch/public_html/traviscwelch.com'
     deploy.build_before = true
+    deploy.port = 2222
   end
 else
   activate :deploy do |deploy|
