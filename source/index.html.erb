@@ -8,13 +8,18 @@
 
     <title>Travis Welch</title>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag "imagesloaded.pkgd", "masonry.pkgd", "all" %>
+    <%= stylesheet_link_tag "tachyons", "all" %>
+    <%= javascript_include_tag "imagesloaded.pkgd", "packery.pkgd", "all" %>
   </head>
 
-  <body class="">
-    <% sitemap.resources.select {|r| r.path.include? "img/travis/" }.each do |r| %>
-      <%= image_tag r.path[4..-1], resize_to: "200x", class: "thumbnail" %>
-    <% end %>
+  <body class="mw7 center">
+      <div class="pam w-100">
+        <h1 class="lh-title">Travis C. Welch</h1>
+      </div>
+    <div id="container">
+      <% sitemap.resources.select {|r| r.path.include? "img/travis/" }.each do |r| %>
+        <%= image_tag r.path[4..-1], resize_to: "200x", class: "thumbnail" %>
+      <% end %>
+    </div>
   </body>
 </html>
