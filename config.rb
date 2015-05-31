@@ -74,16 +74,17 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-activate :deploy do |deploy|
-  deploy.method = :git
-  # remote is optional (default is "origin")
-  # run `git remote -v` to see a list of possible remotes
-  #deploy.remote = "some-other-remote-name"
-
-  # branch is optional (default is "gh-pages")
-  # run `git branch -a` to see a list of possible branches
-  deploy.branch = "gh-pages"
-
-  # strategy is optional (default is :force_push)
-  #deploy.strategy = :submodule
+case ENV['TARGET'].to_s.downcase
+when 'hostgator'
+  activate :deploy do |deploy|
+    deploy.method   = :rsync
+    deploy.host     = 'welchfamilyweb.com'
+    deploy.path     = '/home4/dlnwelch/public_html/traviscwelch.com'
+  end
+else
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.branch = "gh-pages"
+    deploy.build_before = true
+  end
 end
