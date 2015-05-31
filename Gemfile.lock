@@ -41,7 +41,6 @@ GEM
     hitimes (1.2.2)
     hooks (0.4.0)
       uber (~> 0.0.4)
-    htmlcompressor (0.1.2)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     image_optim (0.20.2)
@@ -97,9 +96,6 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
-    middleman-minify-html (3.4.0)
-      htmlcompressor (~> 0.1.0)
-      middleman-core (>= 3.2)
     middleman-simple-thumbnailer (1.0.2)
       middleman-core (~> 3)
       mini_magick (~> 4)
@@ -162,7 +158,6 @@ DEPENDENCIES
   middleman-deploy (~> 1.0)
   middleman-imageoptim
   middleman-livereload (~> 3.1.0)
-  middleman-minify-html
   middleman-simple-thumbnailer
   oj
   tzinfo-data

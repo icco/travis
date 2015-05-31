@@ -67,9 +67,6 @@ configure :build do
     options.svgo = false
   end
 
-  # https://middlemanapp.com/advanced/file_size_optimization/
-  activate :minify_html
-
   # Use relative URLs
   activate :relative_assets
 

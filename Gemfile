@@ -3,10 +3,8 @@ source "https://rubygems.org"
 gem "middleman", "~> 3.3.12"
 
 # For shrinking things
-gem "middleman-minify-html"
 gem "middleman-imageoptim"
 gem "middleman-simple-thumbnailer"
-
 
 # For deploying to gh-pages
 gem "middleman-deploy", "~> 1.0"
