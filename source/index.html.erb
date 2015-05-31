@@ -13,12 +13,16 @@
   </head>
 
   <body class="mw7 center">
-      <div class="pam w-100">
-        <h1 class="lh-title">Travis C. Welch</h1>
-      </div>
+    <div class="pam w-100">
+      <h1 class="lh-title">Travis C. Welch</h1>
+    </div>
     <div id="container">
       <% sitemap.resources.select {|r| r.path.include? "img/travis/" }.each do |r| %>
-        <%= image_tag r.path[4..-1], resize_to: "200x", class: "thumbnail" %>
+        <div class="item">
+          <% link_to r.path do %>
+            <%= image_tag r.path[4..-1], resize_to: "200x", class: "thumbnail db" %>
+          <% end %>
+        </div>
       <% end %>
     </div>
   </body>
