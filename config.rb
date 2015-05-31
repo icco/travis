@@ -62,10 +62,10 @@ configure :build do
   activate :asset_hash
 
   # https://github.com/plasticine/middleman-imageoptim
-  #activate :imageoptim do |options|
-  #  options.pngout = false
-  #  options.svgo = false
-  #end
+  activate :imageoptim do |options|
+    options.pngout = false
+    options.svgo = false
+  end
 
   # Use relative URLs
   activate :relative_assets
