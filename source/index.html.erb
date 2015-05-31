@@ -6,7 +6,7 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
+    <!-- Use title if it"s in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
 
     <%= stylesheet_link_tag "normalize", "all" %>
@@ -14,11 +14,8 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <div class="welcome">
-      <h1>Middleman is Watching</h1>
-      <p class="doc">
-      <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-      </p><!-- .doc -->
-    </div><!-- .welcome -->
+    <% sitemap.resources.select {|r| r.path.include? "img/travis/" and !r.path.include? "-small-200x" }.each do |r| %>
+      <%= image_tag r.path[4..-1], resize_to: "200x", class: "thumbnail" %>
+    <% end %>
   </body>
 </html>
