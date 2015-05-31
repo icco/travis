@@ -20,7 +20,7 @@
       <% sitemap.resources.select {|r| r.path.include? "img/travis/" }.each do |r| %>
         <div class="item">
           <% link_to r.path do %>
-            <%= image_tag r.path[4..-1], resize_to: "200x", class: "thumbnail db" %>
+            <%= image_tag r.path[4..-1], resize_to: "200x200^", class: "thumbnail db" %>
           <% end %>
         </div>
       <% end %>
