@@ -1,19 +1,19 @@
 source "https://rubygems.org"
 
-gem "middleman", "~> 3.3.12"
+gem "middleman", "~> 4.1.2"
 
 # For shrinking things
-gem "middleman-imageoptim"
-gem "middleman-simple-thumbnailer"
+gem "middleman-imageoptim", ">= 0.2.1"
+gem "middleman-simple-thumbnailer", ">= 1.1.0"
 
 # For deploying to gh-pages
-gem "middleman-deploy", "~> 1.0"
+gem "middleman-deploy", "~> 1.0", ">= 1.0.0"
 
 # Faster json
 gem "oj"
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman-livereload", "~> 3.1.1"
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
