@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
-gem "middleman", "~> 4.1.2"
+gem "middleman", "~> 4.3.0"
 
 # For shrinking things
 gem "middleman-imageoptim", ">= 0.2.1"
-gem "middleman-simple-thumbnailer", ">= 1.1.0"
+gem "middleman-simple-thumbnailer", ">= 1.3.1"
 
 # For deploying to gh-pages
 gem "middleman-deploy", "~> 1.0", ">= 1.0.0"
