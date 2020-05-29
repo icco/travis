@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "middleman", "~> 4.3.0"
+gem "middleman", "~> 4.3.7"
 
 # For shrinking things
 gem "middleman-imageoptim", ">= 0.2.1"
